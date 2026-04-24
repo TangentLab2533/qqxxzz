@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球学校组织 | Global School Organization</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 自定义配色与字体配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4A90E2',
+                        light: '#E8F4FD',
+                        dark: '#2D3748',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .card-hover {
+                @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 bg-white rounded-2xl;
+            }
+            .btn-link {
+                @apply text-primary font-semibold hover:text-blue-700 transition-colors;
+            }
+        }
+    </style>
+</head>
+<body class="bg-light min-h-screen text-dark">
+    <!-- 页面容器 -->
+    <div class="max-w-5xl mx-auto px-4 py-12 sm:py-16">
+        <!-- 头部大卡片 -->
+        <header class="card-hover p-8 sm:p-10 mb-8 shadow-lg">
+            <h1 class="text-[clamp(2rem,5vw,3rem)] font-bold text-primary text-center mb-2">
+                全球学校组织
+            </h1>
+            <h2 class="text-[clamp(1.1rem,3vw,1.5rem)] text-gray-500 text-center font-medium mb-6">
+                Global School Organization (GSORG)
+            </h2>
+            <div class="w-24 h-1 bg-primary mx-auto rounded-full mb-8"></div>
+            
+            <!-- 组织介绍 -->
+            <div class="space-y-4 text-lg leading-relaxed">
+                <p>全球学校组织（GSORG）于<strong class="text-primary">2024年10月17日</strong>，在<strong class="text-primary">中国陕西西安高新东区初级中学</strong>正式成立。</p>
+                <p>本组织是<strong>由学生自主创建、为学生服务</strong>的非营利性校园组织，致力于为广大学生提供交流、学习与成长的平台。</p>
+                <p>组织创建者：<strong class="text-primary text-xl">何屹泽</strong></p>
+            </div>
+        </header>
+
+        <!-- 链接卡片网格 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <!-- 正切实验室 -->
+            <div class="card-hover p-7 shadow-md">
+                <div class="flex items-center gap-4 mb-3">
+                    <i class="fa fa-flask text-2xl text-primary"></i>
+                    <h3 class="text-xl font-bold">正切实验室</h3>
+                </div>
+                <a href="http://t.owo.vin" target="_blank" class="btn-link">t.owo.vin</a>
+            </div>
+
+            <!-- G7组织 -->
+            <div class="card-hover p-7 shadow-md">
+                <div class="flex items-center gap-4 mb-3">
+                    <i class="fa fa-users text-2xl text-primary"></i>
+                    <h3 class="text-xl font-bold">G7组织</h3>
+                </div>
+                <a href="http://gsorg.tangentlab.cn" target="_blank" class="btn-link">gsorg.tangentlab.cn</a>
+            </div>
+
+            <!-- 官方邮箱 -->
+            <div class="card-hover p-7 shadow-md">
+                <div class="flex items-center gap-4 mb-3">
+                    <i class="fa fa-envelope text-2xl text-primary"></i>
+                    <h3 class="text-xl font-bold">官方邮箱</h3>
+                </div>
+                <a href="mailto:tangent2533@gmail.com" class="btn-link">tangent2533@gmail.com</a>
+            </div>
+
+            <!-- 官方微信 -->
+            <div class="card-hover p-7 shadow-md">
+                <div class="flex items-center gap-4 mb-3">
+                    <i class="fa fa-wechat text-2xl text-primary"></i>
+                    <h3 class="text-xl font-bold">官方微信</h3>
+                </div>
+                <p class="text-dark font-medium">gsorg_101724</p>
+            </div>
+        </div>
+
+        <!-- 底部版权 -->
+        <footer class="card-hover p-6 text-center shadow-sm">
+            <p class="text-gray-600">&copy; 2024 - 2025 全球学校组织 (GSORG) | 学生创建 · 为学生服务</p>
+        </footer>
+    </div>
+</body>
+</html>
